@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto; 
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.2); 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    border: 1px solid #ff4757; 
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2b2b2b; 
+    font-size: 18px;
+}
+
+.header {
+    background-color: #ff4757; 
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #ffa502; 
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.header p {
+    color: #ffeaa7;
+    margin-top: 10px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #ff4757; 
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 300px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #ffa502; 
+    color: #1a1a1a;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffa502 !important; 
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    .header h2 {
+        font-size: 24px; 
+    }
+    ul li {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+</style>
+
+<header class="header">
+<h2>Sushu tyt</h2>
+<p>Наше качество продуктов заставят вам запомнить нас на долго</p>
+</header>
+<div class="container">
+<p><strong>Доставка от 1000₽ бесплатная<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    
+</body>
+</html></strong></p>
+<p><strong>Устал есть один рис ? Суши "aldan"</strong></p>
+<p><strong>Суши помогут тебе как не когда !</strong></p>
+<img src="21b794482e8a9584a913d4d6067c4f90.jpg" width="400">
+<h2>Список суши , и цен</h2>
+<ul>
+<li><strong>Филадельфия: 450₽ </strong></li>
+<li><strong>Калифорния: 350₽</strong></li>
+<li><strong>Запеченный ролл: 400₽ </strong></li>
+</ul>
+<button onclick="zapis()">Заказать суши</button>
+ <button onclick="showServices()">Посмотреть все меню</button>
+<div id="result" style="margin-top: 20px; color: gold;"></div> 
+</div>  
+<script>
+
+function zapis() {let name = prompt("Что хотите заказать?");
+    alert ("Доставка скоро будет в пути  ! Ждите звонок " + name + "!");
+
+ }
+
+let services = ["филодельфия", "Калифорния", "Запеченный ролл"];
+function showServices() {
+    document.getElementById("result").innerText = ""
+    for (let i = 0; i < services.length; i++) {
+        document.getElementById("result").innerHTML += services[i] + "<br>";
+    }
+}
+
+
+
+</script>
