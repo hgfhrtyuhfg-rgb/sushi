@@ -161,7 +161,7 @@ button:hover {
 <p>Наше качество продуктов заставят вам запомнить нас на долго</p>
 </header>
 <div class="container">
-<p><strong>Доставка от 1000₽ бесплатная<!DOCTYPE html>
+<p><strong>Доставка от 1000₽ бесплатная
 <html lang="en">
 <head>
 
@@ -187,7 +187,7 @@ button:hover {
         <p>Введите ваше имя и номер телефона:</p>
         <input type="text" id="nameInput" placeholder="Ваше имя">
         <input type="text" id="nameInput" placeholder="Заказ">
-        <input type="text" id="phoneInput" placeholder="Телефон">
+        <input type="text" id="orderInput" placeholder="Телефон">
         <button onclick="submitOrder()">Отправить заказ</button>
     </div>
 </div>
@@ -210,8 +210,9 @@ function closeModal() {
 function submitOrder() {
     let name = document.getElementById("nameInput").value;
     let phone = document.getElementById("phoneInput").value;
+     let order = document.getElementById("orderInput").value;
     
-    if (name === "" || phone === "") {
+    if (name === "" || phone === "" || order ==="") {
         alert("Пожалуйста, заполните все поля!");
     } else {
         alert("Спасибо, " + name + "! Мы позвоним вам на номер " + phone);
